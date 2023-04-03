@@ -1,3 +1,7 @@
+:root{
+  --ajudar:white;
+}
+
 @keyframes tracking-in-contract {
     0% {
       letter-spacing: 1em;
@@ -29,6 +33,74 @@
       opacity: 1;
     }
   }
+
+  /*.hoverText {
+    --c:
+    
+    color: #fffefe00;
+    background: 
+      linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+  }
+
+  .hoverText:hover {
+    --_p: 100%;
+    color: white;
+  }*/
+
+
+  .hoverText span {
+    color: #000;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .hoverText span::before {
+
+    background: hsl(45 100% 70%);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: -1;
+  }
+  
+  .hoverText span:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+
+  .hoverMenu:hover {
+    color: #75b2eb;
+    background: 
+      linear-gradient(90deg,#1095c1 50%,#000 0) 
+      var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: .3s;
+    --_p: 0%;
+  }
+
+  .hoverMenu {
+    font-family: system-ui, sans-serif;
+    margin:0;
+    cursor: pointer;
+    padding: 0 .1em;
+    --_p: 100%;
+  }
+
+  
   
 
 .blurry-background {
@@ -43,64 +115,136 @@
   }
 
   .glass {
-    background-color: rgba(32, 30, 30, 0.671);
+    background-color: rgba(32, 30, 30, 0.884);
     opacity: 0.8;
-    box-shadow: 0 0 10px rgba(1, 1, 1, 7.25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2.15);
     width: 30rem;
-    height: 30rem;
-    border-radius: 20%;
+    height: 20rem;
+    border-radius: 10%;
     margin: auto;
-    text-align: center;
     color: #fafafa;
     font-size: larger;
     font-family: 'DM Sans',sans-serif;
-    text-align: justify;
+    line-height: 30px; 
+    display:flex
+    
 
   }
   .slide-in-elliptic-top-fwd {
 	animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+.portfolio-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.portfolio-title span {
+  font-weight: bolder;
+  color: #000000;
+  }
+
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transition: all 0.3s ease-in-out; /* animação de transição para suavizar a mudança de tamanho e posição */
+    margin: auto;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* aumenta o tamanho do card em 5% */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* aumenta a intensidade da sombra */
+  }
+  
+  .card-content {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease-in-out; /* animação de transição para suavizar a mudança de opacidade */
+    opacity: 0; /* inicia a opacidade em 0 para que a animação funcione */
+  }
+  
+  .card:hover .card-content {
+    opacity: 1; /* altera a opacidade para 1 quando o card é passado o mouse */
+    bottom: -50px; /* move o conteúdo para cima 50px */
+  }
+
 
 body{
     background-color: #555555;
+    margin:0;
+    
 }
-
 
 
 #toolbar{
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color: rgb(44, 49, 43);
     top: 0;
     position: fixed;
     left: 0;
     color: rgb(0, 0, 0);
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
 }
 #options{
-    padding: 10px;
-    display: inline-block;
-    margin:  10px;
+    margin-top: 30px;
+    margin-right:38% ;
     color: #fafafa;
-      
+    display: inline-block;
+    justify-items: baseline;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    
 }
 #title{
     
     color: #fafafa;
     text-transform: none;
-    text-align: center; 
-    margin-top: 80px;
+    margin: auto;
     font: 40px/1 'TeXGyreAdventorBold';
     text-transform: none;
     transform: translateX(0);
     text-shadow: 0 0 0 transparent;
     transition: text-shadow 0.10s; 
     transition: transform 0.3s ease-in-out;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
 }
 #title:hover{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
     transform: translateX(5px);
+}
+#subtitle {
+  font-size: 10px;
+  color: #fafafa;
+  text-transform: none;
+  margin-top: 1px; 
+
 }
 
 #video{
@@ -111,6 +255,16 @@ body{
     min-width: 100%;
     min-height: 100%;
 }
+#img{
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
 #footer{
     width: 100%;
     height: 90px;
@@ -124,15 +278,56 @@ body{
 
 #profile{
     z-index: 2;
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 30rem;
     right:0;
     top: 0;
     margin-top: 100px;
+    margin-right: 20px;
     position: fixed;
-    border-radius: 50%;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0 0 0 5px white;
 }
 
+
+
+#text{
+  text-align: center;
+  line-height: 1.2;
+  padding: 10px;
+}
+section{
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  top:50%;
+  position: relative;
+  transform: translateY(+50%);
+}
+
+
+#background2{
+  width: 100%;
+  height: 200rem;
+  background-color: #e8e8e5;
+  margin-top: 30%;
+  
+  
+}
+#background2::before {
+  z-index: -1;
+  margin-top: 50%;
+  content: ""; /* cria um pseudo-elemento antes da div */
+  position: absolute; /* posiciona o pseudo-elemento */
+  top: 0; /* posiciona o topo do pseudo-elemento na parte superior da div */
+  left: 0; /* posiciona a esquerda do pseudo-elemento no canto superior esquerdo da div */
+  width: 100%; /* largura do pseudo-elemento */
+  height: 60px; /* altura do pseudo-elemento */
+  background: linear-gradient(to bottom, rgba(232, 232, 229, 0), rgba(232, 232, 229, 1));
+}
 
 
 
