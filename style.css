@@ -531,6 +531,7 @@ h1:last-of-type {
 .box:hover {
   transform: translateY(-0.3125rem); 
   box-shadow: 0rem 1.875rem 2.5rem -1.25rem var(--grayishBlue), 0rem 0rem .625rem rgba(0, 0, 0, 0.1); 
+  border-top: .1875rem solid #75b2eb;
 }
 
 @media (max-width: 28.125rem) {
