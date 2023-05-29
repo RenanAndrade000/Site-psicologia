@@ -37,33 +37,16 @@
 
 @keyframes slide-in-elliptic-top-fwd {
     0% {
-      transform: translateY(-600px) rotateX(-30deg) scale(0);
+      transform: translateY(-37.5rem) rotateX(-30deg) scale(0);
       transform-origin: 50% 100%;
       opacity: 0;
     }
     100% {
       transform: translateY(0) rotateX(0) scale(1);
-      transform-origin: 50% 1400px;
+      transform-origin: 50% 87.5rem;
       opacity: 1;
     }
   }
-
-  /*.hoverText {
-    --c:
-    
-    color: #fffefe00;
-    background: 
-      linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,
-      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
-    -webkit-background-clip: text,padding-box;
-            background-clip: text,padding-box;
-    transition: 0.5s;
-  }
-
-  .hoverText:hover {
-    --_p: 100%;
-    color: white;
-  }*/
 
 
   .hoverText span {
@@ -85,7 +68,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     z-index: -1;
   }
   
@@ -123,23 +106,23 @@
     object-fit: cover;
     position: absolute;
     z-index: -1;
-    filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    filter: blur(.3125rem);
+    -webkit-backdrop-filter: blur(.3125rem);
+    backdrop-filter: blur(.3125rem);
   }
 
   .glass {
     background-color: rgb(228, 228, 228);
     opacity: 0.8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
     width: 30rem;
     height: 25rem;
     border-radius: 10%;
     margin: auto;
     color: #000000;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
-    line-height: 30px; 
+    line-height: 1.875rem; 
     display:flex;
     
 
@@ -156,7 +139,7 @@
   color: #333;
   text-align: center;
   margin-top: 20%;
-  margin-left: 5px;
+  margin-left: .3125rem;
   cursor: pointer;
 }
 
@@ -168,35 +151,35 @@
 
   .card {
     background-color: #ececec;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: .625rem;
+    box-shadow: 0rem 0rem .625rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
     position: relative;
-    width: 300px;
-    height: 400px;
-    transition: all 0.3s ease-in-out; /* animação de transição para suavizar a mudança de tamanho e posição */
+    width: 18.75rem;
+    height: 25rem;
+    transition: all 0.3s ease-in-out;
     margin: auto;
   }
   
   .card:hover {
-    transform: scale(1.05); /* aumenta o tamanho do card em 5% */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* aumenta a intensidade da sombra */
+    transform: scale(1.05);
+    box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
   }
   
   .card-content {
-    padding: 20px;
+    padding: 1.25rem;
     position: absolute;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.9);
-    transition: all 0.3s ease-in-out; /* animação de transição para suavizar a mudança de opacidade */
-    opacity: 0; /* inicia a opacidade em 0 para que a animação funcione */
+    transition: all 0.3s ease-in-out;
+    opacity: 0; 
   }
   
   .card:hover .card-content {
-    opacity: 1; /* altera a opacidade para 1 quando o card é passado o mouse */
-    bottom: -50px; /* move o conteúdo para cima 50px */
+    opacity: 1; 
+    bottom: -3.125rem; 
   }
   
  
@@ -223,14 +206,14 @@
     height: 3.125rem;
     will-change: transform;
     position: absolute;
-    left: 50%; /* Define a posição do botão a partir do centro da tela */
-    transform: translateX(-50%); /* Move o botão para a esquerda em 50% da sua própria largura */
+    left: 50%;
+    transform: translateX(-50%); 
     transition: background-color 300ms cubic-bezier(.23, 1, 0.32, 1), border-color 300ms cubic-bezier(.23, 1, 0.32, 1);
 }
 
 .btn:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translate(-50%, -2px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 .5rem .9375rem;
+    transform: translate(-50%, -0.125rem);
     background-color: #75b2eb;
     border-color: #75b2eb;
     transition: transform 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -255,7 +238,7 @@ body{
 
 #toolbar{
     width: 100%;
-    height: 80px;
+    height: 5rem;
     background-color: rgb(44, 49, 43);
     top: 0;
     position: fixed;
@@ -281,7 +264,7 @@ body{
     color: #fafafa;
     text-transform: none;
     right: 5%;
-    padding-left: 30px;
+    padding-left: 1.875rem;
     font: 2.1875rem/1 'TeXGyreAdventorBold';
     text-transform: none;
     transform: translateX(0);
@@ -295,14 +278,14 @@ body{
     
 }
 #title:hover{
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
-    transform: translateX(5px);
+    text-shadow: 0 0 .625rem rgba(0, 0, 0, 0.55);
+    transform: translateX(.3125rem);
 }
 #subtitle {
   font-size: 10px;
   color: #fafafa;
   text-transform: none;
-  margin-top: 1px; 
+  margin-top: .0625rem; 
 
 }
 
@@ -346,9 +329,8 @@ body{
     position: fixed;
     border-radius: 10%;
     background-color: white;
-    box-shadow: 0 0 0 5px white;
+    box-shadow: 0 0 0 .3125rem white;
 }
-
 
 
 #text{
@@ -378,8 +360,6 @@ section{
 }
 
 
-
-
 #home {
 
   
@@ -398,7 +378,7 @@ section{
   height: 28.125rem;
   
   background: hsl(0,0%,95%);
-  box-shadow: 1px 1px 25px 3px rgba(0,0,0,.3);
+  box-shadow: .0625rem .0625rem 1.5625rem .1875rem rgba(0,0,0,.3);
   
 }
 
@@ -425,7 +405,7 @@ section{
   flex-direction: column;
   gap: 4em;
   padding: 0 3em;
-  width: minmax(80px, 80%);
+  width: minmax(5rem, 80%);
 }
 
 .content {
@@ -463,30 +443,8 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution { 
-  font-size: 11px; text-align: center; 
+  font-size: .6875rem; text-align: center; 
 }
 .attribution a { 
   color: hsl(228, 45%, 44%); 
@@ -502,7 +460,7 @@ h1:last-of-type {
   color: var(--varyDarkBlue);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   h1 {
       font-size: 1.5rem;
   }
@@ -523,7 +481,7 @@ h1:last-of-type {
 .box-container{
   flex-basis: 33.33% ;
   box-sizing: content-box;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   
 }
 
@@ -533,8 +491,8 @@ h1:last-of-type {
 
 .box {
   
-  border-radius: 5px;
-  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  border-radius: .3125rem;
+  box-shadow: 0rem 1.875rem 2.5rem -1.25rem var(--grayishBlue);
   background-color: #fafafa;
   width: 20rem;
   height: 11.125rem;
@@ -546,21 +504,21 @@ h1:last-of-type {
 .box img {
   float: right;
   width: 3.125rem;
-  padding: 8px;
+  padding: .5rem;
 }
 
 .box:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0px 30px 40px -20px var(--grayishBlue), 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-0.3125rem); 
+  box-shadow: 0rem 1.875rem 2.5rem -1.25rem var(--grayishBlue), 0rem 0rem .625rem rgba(0, 0, 0, 0.1); 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 28.125rem) {
   .box {
       height: 12.5rem;
   }
 }
 
-@media (max-width: 950px) and (min-width: 450px) {
+@media (max-width: 59.375rem) and (min-width: 28.125rem) {
   .box {
       text-align: center;
       height: 11.25rem;
@@ -568,27 +526,27 @@ h1:last-of-type {
 }
 
 .cyan {
-  border-top: 3px solid var(--cyan);
+  border-top: .1875rem solid var(--cyan);
 }
 
 
 #super {
   color: var(--varyDarkBlue);
   font-weight: var(--weight3);
-  padding-left: 10px;
+  padding-left: .625rem;
 }
 .row1-container,.row2-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
-  margin-left: 1000px;
+  padding: .625rem;
+  margin-left: 62.5rem;
   margin-top: -49.875rem;
-  margin-bottom: 15px; 
+  margin-bottom: .9375rem; 
 
 }
 
-@media (min-width: 950px) {
+@media (min-width: 59.375rem) {
   .row1-container {
       justify-content: center;
       align-items: center;
@@ -600,8 +558,8 @@ h1:last-of-type {
   }
   .box-down {
       position: relative;
-      top: 160px;
-      padding: 10px;
+      top: 10rem;
+      padding: .625rem;
   }
   .box {
       width: 85%;
