@@ -21,24 +21,28 @@
     <h1 class="tracking-in-contract" id="title">Genildo Andrade
       <p id="subtitle">Terapeuta Psicanalista CRP: 02/27770</p>
     </h1>
+    
 
     <div id="options">
-      <div class="tracking-in-contract hoverMenu">Inicio &emsp;</div>
+      <div class="tracking-in-contract hoverMenu" onclick="scrollToStart('#start')">Inicio &emsp;</div>
       <div class="tracking-in-contract hoverMenu">Recursos &emsp;</div>
-      <div class="tracking-in-contract hoverMenu">Contato &emsp;</div>
-      <div class="tracking-in-contract hoverMenu">Sobre mim &emsp;</div>
+      <div class="tracking-in-contract hoverMenu" onclick="redirect('https://www.youtube.com/watch?v=OSttHUmyU3c')">Contato &emsp;</div>
+      <div class="tracking-in-contract hoverMenu" onclick="scrollToSection('#aboutme')">Sobre mim &emsp;</div>
 
     </div>
 
 
   </div>
   <img src="./img/background3.png" id="img">
-
+<section id="start"></section>
 
 
 
   <h3 class="portfolio-title hoverText">Meu propósito é <span>ajudar</span> você</h3>
-  <button class="btn" id="contact">Entre em contato <i class="fab fa-whatsapp fa 5x"></i></button>
+  <a href="https://www.youtube.com/watch?v=OSttHUmyU3c" target="_blank">
+    <button class="btn" id="contact">Entre em contato <i class="fab fa-whatsapp fa 5x"></i></button>
+  </a>
+  
 
 
   <img src="img/funcionaporfavor.png" id="background2">
@@ -65,7 +69,7 @@
       </div>
     </div>
   </div>
-
+  <section id="aboutme"></section>
 
   <div class="row1-container">
     <div class="box-container">
