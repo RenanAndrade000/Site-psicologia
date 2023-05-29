@@ -35,6 +35,26 @@
 	animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+@keyframes glow {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 5px #fff;
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: 0 0 20px #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 5px #fff;
+  }
+}
+
+.glowing-text:hover {
+  animation: glow 4s infinite;
+}
+
+
 @keyframes slide-in-elliptic-top-fwd {
     0% {
       transform: translateY(-37.5rem) rotateX(-30deg) scale(0);
@@ -316,6 +336,7 @@ body{
     left: 0;
     color: rgb(0, 0, 0);
     text-align: center;
+    align-items: center;
 }
 
 #profile{
@@ -570,6 +591,29 @@ h1:last-of-type {
   }
   
 }
+
+#instagram {
+  padding: 9px;
+  font-size: 24px;
+}
+
+
+#whatsapp{
+  padding: 9px;
+  font-size: 24px;
+}
+#number{
+  font-size: 18px;
+  color: #fafafa;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 52.3%;
+  transform:translateX(-50%);
+  transform:translateY(40%);
+
+}
+
 
 
 

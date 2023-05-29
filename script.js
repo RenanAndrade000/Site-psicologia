@@ -17,7 +17,7 @@ video.addEventListener('contextmenu', function(e) {
       });
     }
   }
-  
+
   function scrollToStart(section){
       var section = document.querySelector(section);
       if(section){
